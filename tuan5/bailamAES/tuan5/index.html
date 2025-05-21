@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Giải mã AES</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Giải mã File AES</h1>
+
+    <input type="password" id="key" placeholder="🔑 Nhập khóa giải mã" />
+    <br>
+
+    <input type="file" id="fileInput" />
+    <br>
+
+    <button onclick="decryptFile()">🚀 Giải mã</button>
+    <br><br>
+
+    <a id="downloadLink" style="display: none;">📥 Tải file đã giải mã</a>
+    <p id="status"></p>
+  </div>
+
+  <!-- Thư viện mã hóa -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="aes-decrypt.js"></script>
+  <h2>🔒 Mã hóa File AES</h2>
+<input type="password" id="encryptKey" placeholder="🔑 Nhập khóa mã hóa" />
+<br>
+<input type="file" id="plainFileInput" />
+<br>
+<button onclick="encryptFile()">🔐 Mã hóa</button>
+<br><br>
+<a id="encryptDownloadLink" style="display: none;">📤 Tải file đã mã hóa</a>
+<p id="encryptStatus"></p>
+
+</body>
+</html>
+
